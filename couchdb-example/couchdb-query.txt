@@ -1,0 +1,6 @@
+#delete a document
+curl -X DELETE http://127.0.0.1:5984/testdb/8c56697b38fb4a7cb5dd49d2794d725d\?rev\=1-79877b6275c2da1c97772ea6c2b4e519
+
+#check the document with the revision history
+
+curl -X GET http://127.0.0.1:5984/testdb/8c56697b38fb4a7cb5dd49d2794d725d?revs_info=true
